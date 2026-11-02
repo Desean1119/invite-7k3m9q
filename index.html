@@ -9,7 +9,7 @@
 <meta name="description" content="年糕、小羊、十一 联名邀请：赏个脸呗，都市丽人。点开选个时间。">
 <meta property="og:type" content="website">
 <meta property="og:title" content="请你吃新疆菜｜赏个脸呗，都市丽人。">
-<meta property="og:description" content="年糕 · 小羊 · 十一 联名邀请，时间你定">
+<meta property="og:description" content="年糕 · 小羊 · 十一 联名邀请 · 天河城 7 楼，时间你定">
 <meta property="og:url" content="https://desean1119.github.io/invite-7k3m9q/"><meta property="og:image" content="https://desean1119.github.io/invite-7k3m9q/share2.jpg"><meta property="og:image:width" content="600"><meta property="og:image:height" content="600"><meta property="og:image:type" content="image/jpeg">
 <link rel="preload" href="assets/font/wenkai.woff2" as="font" type="font/woff2" crossorigin>
 <style>@font-face{font-family:'LXGW WenKai';font-style:normal;font-weight:400;font-display:swap;src:url("assets/font/wenkai.woff2") format("woff2")}</style>
@@ -184,6 +184,10 @@ body{
   border-radius:14px 18px 12px 16px;opacity:0;pointer-events:none;transition:all .25s ease}
 .toast.up{opacity:1;transform:translate(-50%,0)}
 @media (prefers-reduced-motion: reduce){*{animation:none!important;transition:none!important}}
+
+a.place{text-decoration:none;color:inherit;transition:transform .15s ease}
+a.place:active{transform:scale(.985)}
+.place .place-go{margin-left:auto;font-size:12px;letter-spacing:.1em;color:var(--red);border:1.6px solid var(--red);border-radius:12px;padding:5px 10px;white-space:nowrap}
 </style>
 </head><body>
 <div class="grain"></div>
@@ -379,7 +383,7 @@ body{
       <div class="tape"></div>
       <p>贫嘴老头诚邀日理万机的零零后老师<br>屈尊驾临，品鉴新疆美食，<br>体验西域风情。</p>
       <p class="verdict">去吃<span class="hl">新疆菜</span>。</p>
-      <p><b>时间你来定</b>，你哪天有空我们就哪天去。地点我还在踩点，定了第一时间通知你。</p>
+      <p><b>时间你来定</b>，你哪天有空我们就哪天去。<br>地方我挑好了：<b>赫斯提娅·新疆味道</b>，和平路 263 号天河城 7 楼，地铁 3 号线和平路站出来就到。</p>
       <p class="sign"><b>年糕 · 小羊 · 十一</b><br>（喵喵喵，翻译：快去挑个时间）</p>
     </div>
   </section>
@@ -403,10 +407,11 @@ body{
     <h2 class="h2">时间你定<small>选好了我就去订位子</small></h2>
     <div class="dates" id="dates"></div>
     <div class="times" id="times"></div>
-    <div class="place">
+    <a class="place" href="https://uri.amap.com/search?keyword=%E8%B5%AB%E6%96%AF%E6%8F%90%E5%A8%85%C2%B7%E6%96%B0%E7%96%86%E5%91%B3%E9%81%93%20%E5%A4%A9%E6%B2%B3%E5%9F%8E&city=022&callnative=1" target="_blank" rel="noopener">
       <svg viewBox="0 0 40 40" aria-hidden="true"><use href="#i-pin" width="40" height="40"/></svg>
-      <div><b>地点 · 待定</b><i>我踩好点就把地址发给你</i></div>
-    </div>
+      <div><b>赫斯提娅·新疆味道（天河城店）</b><i>和平区和平路 263 号 · 天河城 7 楼 711B</i></div>
+      <span class="place-go">导航</span>
+    </a>
   </section>
 
   <p class="foot">猫猫们 敬上 · 一张手绘的小请帖</p>
@@ -422,7 +427,7 @@ body{
     <div class="stamp">定</div>
     <h3>时间定好啦</h3>
     <div class="rc-time" id="rcTime"></div>
-    <div class="rc-place">地点：<i>待定</i>，我定了马上告诉你</div>
+    <div class="rc-place">地点：<i>赫斯提娅·新疆味道</i><br>和平路 263 号 · 天河城 7 楼</div>
     <button class="btn" id="copyBtn">复制，发给她</button>
     <button class="link" id="closeBtn" type="button">再看看</button>
     <p class="sheet-note">复制后回到微信，粘贴发过去就行<br>也可以长按截图保存这张回执</p>
@@ -434,7 +439,7 @@ body{
     <div class="stamp">喵</div>
     <h3>她选好时间了</h3>
     <div class="rc-time" id="hostTime"></div>
-    <div class="rc-place">接下来：订位子，再把地址发给她</div>
+    <div class="rc-place">接下来：订个位子就行，地址她那边已经能看到</div>
     <button class="btn" id="hostCopy">复制确认话术</button>
     <button class="link" id="hostClose" type="button">先看看请帖</button>
     <p class="sheet-note">话术里会带上时间，粘到微信发给她就行</p>
@@ -558,7 +563,7 @@ body{
 
   document.getElementById('copyBtn').onclick = function(){
     var link = location.origin + location.pathname + '#t=' + isoDate(selDate) + 'T' + selTime;
-    var msg = '我把时间定好啦：' + fmtDate(selDate) + ' ' + selTime + '，地点等你通知喵～\n' + link;
+    var msg = '我把时间定好了：' + fmtDate(selDate) + ' ' + selTime + '，地方是赫斯提娅·新疆味道（天河城 7 楼），不见不散～\n' + link;
     var btn = this;
     copyText(msg).then(function(ok){
       showToast(ok ? '已复制，粘贴发给她吧' : '复制失败，长按选中文字复制');
@@ -579,7 +584,7 @@ body{
       document.getElementById('hostSheet').classList.remove('up');
     };
     document.getElementById('hostCopy').onclick = function(){
-      var msg = '好！那就 ' + fmtDate(picked.d) + ' ' + picked.t + '。地点我在踩点，定了马上发你，到时候见喵～';
+      var msg = '好！那就 ' + fmtDate(picked.d) + ' ' + picked.t + '。地方是赫斯提娅·新疆味道，和平路 263 号天河城 7 楼，到时候见～';
       copyText(msg).then(function(ok){
         showToast(ok ? '已复制，粘贴发给她吧' : '复制失败，长按选中文字复制');
       });
