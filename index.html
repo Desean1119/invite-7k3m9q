@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+<meta name="format-detection" content="telephone=no">
+<meta name="theme-color" content="#FBF5E8">
+<title>请你吃新疆菜｜赏个脸呗，都市丽人。</title>
+<meta name="description" content="年糕、小羊、十一 联名邀请：赏个脸呗，都市丽人。点开选个时间。">
+<meta property="og:type" content="website">
+<meta property="og:title" content="请你吃新疆菜｜赏个脸呗，都市丽人。">
+<meta property="og:description" content="年糕 · 小羊 · 十一 联名邀请，时间你定">
+<meta property="og:image" content="share.png">
+<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lxgw-wenkai-webfont@1.7.0/lxgwwenkai-regular.css">
+<style>
+:root{
+  --ink:#1F1B18;
+  --ink2:#6F655A;
+  --ink3:#9A8E7E;
+  --paper:#FEFBF4;
+  --card:#FFFFFF;
+  --red:#CE5C3D;
+  --gold:#DFAC57;
+  --plum:#8B6BA6;
+  --green:#7C9E7A;
+  --blue:#6E8FA8;
+}
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html,body{margin:0;padding:0}
+html{-webkit-text-size-adjust:100%}
+body{
+  color:var(--ink);
+  font-family:"LXGW WenKai","LXGW WenKai TC","Kaiti SC","STKaiti","KaiTi","Songti SC",serif;
+  background:
+    radial-gradient(120% 55% at 50% -10%, #FFFCF3 0%, rgba(255,252,243,0) 62%),
+    radial-gradient(90% 45% at 50% 105%, #F4EAD4 0%, rgba(244,234,212,0) 60%),
+    var(--paper);
+  background-attachment:fixed;
+  overflow-x:hidden;
+  -webkit-font-smoothing:antialiased;
+  line-height:1.9;
+}
+.grain{position:fixed;inset:0;z-index:0;pointer-events:none;opacity:.22;
+  background-image:radial-gradient(rgba(120,96,60,.10) .8px, transparent .8px);
+  background-size:3px 3px;mix-blend-mode:multiply}
+.wrap{position:relative;z-index:1;max-width:468px;margin:0 auto;padding:0 24px 120px}
+
+/* ---------- cover ---------- */
+.cover{min-height:100svh;display:flex;flex-direction:column;align-items:center;justify-content:center;
+  text-align:center;padding:44px 0 30px}
+.tag{display:inline-block;font-size:12px;letter-spacing:.5em;color:var(--ink2);
+  padding:7px 0 6px;min-width:104px;text-align:center;border-top:1.6px solid var(--ink);border-bottom:1.6px solid var(--ink)}
+.meow{margin:20px 0 -4px;font-size:14px;letter-spacing:.3em;color:var(--ink2);
+  transform:rotate(-7deg)}
+.title{margin:0;font-weight:400;font-size:clamp(38px,11.4vw,50px);line-height:1.32;letter-spacing:.03em}
+.title .l2{display:block}
+.title em{font-style:normal;color:var(--red);position:relative;display:inline-block;padding:0 2px}
+.title em::after{content:"";position:absolute;left:-6px;right:-6px;bottom:-2px;height:14px;
+  border-top:2.4px solid rgba(206,92,61,.55);border-radius:50% 50% 0 0/100% 100% 0 0;
+  transform:rotate(-1.2deg)}
+.sub{margin:22px 0 0;font-size:13.5px;color:var(--ink2);letter-spacing:.12em}
+.hero{position:relative;width:100%;max-width:372px;margin:10px 0 0;aspect-ratio:372/262}
+.hero-ground{position:absolute;left:8%;right:8%;bottom:0;height:24px;
+  background:radial-gradient(50% 50% at 50% 50%, rgba(150,122,80,.20), rgba(150,122,80,0) 72%)}
+.hero-img{position:absolute;bottom:12px;display:block;width:auto;user-select:none;-webkit-user-drag:none;
+  -webkit-touch-callout:none}
+.h-l{left:0;height:58%;transform:rotate(-1.2deg);transform-origin:50% 100%}
+.h-r{right:0;height:57%;transform:rotate(1.2deg);transform-origin:50% 100%}
+.h-c{left:50%;bottom:9px;transform:translateX(-50%);height:76%;z-index:2}
+.hero-spark{position:absolute;opacity:.85}
+.sp1{left:2%;top:6%;width:15px;height:15px}
+.sp2{right:3%;top:0;width:11px;height:11px}
+.scrollhint{margin-top:8px;font-size:12px;color:var(--ink3);letter-spacing:.2em;
+  animation:bob 2.4s ease-in-out infinite}
+@keyframes bob{0%,100%{transform:translateY(0);opacity:.85}50%{transform:translateY(5px);opacity:1}}
+
+/* ---------- sections ---------- */
+.sec{padding:30px 0 2px}
+.eyebrow{font-size:11px;letter-spacing:.34em;color:var(--ink3);text-align:center;margin:0 0 4px}
+.h2{font-size:23px;font-weight:400;letter-spacing:.05em;margin:0 0 2px;text-align:center}
+.h2 small{font-size:12px;color:var(--ink3);letter-spacing:.1em;display:block;margin-top:2px}
+.divider{display:block;width:100%;height:22px;margin:24px 0 0;overflow:visible}
+.foot{margin:38px 0 0;text-align:center;font-size:11px;letter-spacing:.2em;color:var(--ink3)}
+
+/* ---------- letter ---------- */
+.note{position:relative;background:var(--card);border:2px solid var(--ink);
+  border-radius:22px 16px 24px 18px / 18px 24px 16px 22px;
+  padding:26px 22px 18px;margin-top:14px;
+  box-shadow:5px 6px 0 rgba(51,46,40,.07);
+  transform:rotate(-.45deg)}
+.note p{margin:0 0 14px;font-size:15.5px;line-height:2.05}
+.note .verdict{margin:-4px 0 20px;font-size:19px;letter-spacing:.04em;line-height:1.75}
+.note .salut{font-size:16px;margin-bottom:10px}
+.note .hl{color:var(--red);white-space:nowrap}
+.note .sign{margin:20px 0 2px;text-align:right;font-size:14px;color:var(--ink2);line-height:1.85}
+.note .sign b{color:var(--ink);font-weight:400;letter-spacing:.06em}
+.tape{position:absolute;top:-11px;left:50%;transform:translateX(-50%) rotate(-2.5deg);
+  width:86px;height:22px;background:rgba(223,172,87,.42);
+  border-left:1px dashed rgba(51,46,40,.16);border-right:1px dashed rgba(51,46,40,.16)}
+
+/* ---------- menu row ---------- */
+.menu{display:flex;gap:12px;overflow-x:auto;padding:10px 24px 6px;margin:0 -24px;
+  scrollbar-width:none;-webkit-overflow-scrolling:touch}
+.menu::-webkit-scrollbar{display:none}
+.dish{flex:0 0 auto;width:74px;text-align:center}
+.dish svg{width:62px;height:62px;display:block;margin:0 auto 0;overflow:visible}
+.dish span{font-size:12px;color:var(--ink2);letter-spacing:.08em}
+
+/* ---------- picker ---------- */
+.dates{display:flex;gap:10px;overflow-x:auto;padding:14px 24px 8px;margin:0 -24px;
+  scrollbar-width:none;-webkit-overflow-scrolling:touch}
+.dates::-webkit-scrollbar{display:none}
+.date{flex:0 0 auto;min-width:66px;padding:9px 6px 7px;text-align:center;cursor:pointer;
+  background:var(--card);border:2px solid var(--ink);
+  border-radius:16px 20px 14px 22px / 20px 14px 22px 16px;
+  transition:transform .16s ease, background .16s ease, color .16s ease}
+.date .dw{display:block;font-size:11px;letter-spacing:.12em;color:var(--ink3)}
+.date .dd{display:block;font-size:18px;line-height:1.3}
+.date.on{background:var(--red);border-color:var(--red);color:#FFF9EC;transform:translateY(-2px) rotate(-1.5deg)}
+.date.on .dw{color:rgba(255,249,236,.82)}
+.times{display:grid;grid-template-columns:repeat(4,1fr);gap:9px;margin-top:12px}
+.time{padding:9px 0;text-align:center;font-size:14px;cursor:pointer;background:var(--card);
+  border:1.8px solid var(--ink);border-radius:14px 18px 12px 16px / 16px 12px 18px 14px;
+  transition:transform .16s ease, background .16s ease, color .16s ease}
+.time.on{background:var(--ink);color:var(--paper);transform:rotate(-1.8deg)}
+.place{margin-top:18px;display:flex;gap:12px;align-items:center;padding:14px 16px;
+  border:2px dashed rgba(51,46,40,.45);border-radius:18px 14px 20px 16px / 16px 20px 14px 18px;
+  background:rgba(255,252,242,.55)}
+.place svg{width:30px;height:30px;flex:0 0 auto;overflow:visible}
+.place b{display:block;font-size:14px;font-weight:400;letter-spacing:.1em}
+.place i{font-style:normal;font-size:12.5px;color:var(--ink2)}
+
+/* ---------- bar ---------- */
+.bar{position:fixed;left:0;right:0;bottom:0;z-index:30;padding:12px 22px calc(14px + env(safe-area-inset-bottom));
+  background:linear-gradient(to top, var(--paper) 62%, rgba(251,245,232,0));
+  display:flex;align-items:center;gap:12px;max-width:468px;margin:0 auto;
+  transform:translateY(120%);transition:transform .32s cubic-bezier(.2,.8,.3,1)}
+.bar.up{transform:translateY(0)}
+.bar-txt{font-size:12.5px;color:var(--ink2);flex:1 1 auto;letter-spacing:.06em;line-height:1.5}
+.bar-txt b{font-weight:400;color:var(--ink)}
+.btn{flex:0 0 auto;font-family:inherit;font-size:15px;letter-spacing:.14em;padding:12px 22px;
+  color:#FFF9EC;background:var(--red);border:2.6px solid var(--ink);
+  border-radius:26px 18px 24px 20px / 20px 26px 18px 24px;cursor:pointer;
+  box-shadow:4px 6px 0 rgba(31,27,24,.9);transition:transform .12s ease;
+  transform:rotate(-.5deg)}
+.btn:active{transform:translateY(3px) rotate(-.5deg);box-shadow:1px 2px 0 rgba(31,27,24,.9)}
+.btn:disabled{opacity:.55}
+
+/* ---------- bgm ---------- */
+.bgm{position:fixed;top:14px;right:14px;z-index:45;width:44px;height:44px;padding:0;border-radius:50%;
+  background:rgba(255,253,246,.94);border:2px solid var(--ink);display:flex;align-items:center;justify-content:center;
+  box-shadow:2px 3px 0 rgba(31,27,24,.12);cursor:pointer;-webkit-tap-highlight-color:transparent}
+.bgm svg{width:25px;height:25px;display:block;overflow:visible}
+.bgm .disc{transform-origin:12px 12px;animation:spin 6s linear infinite;animation-play-state:paused}
+.bgm.on .disc{animation-play-state:running}
+.bgm:not(.on) svg{opacity:.5}
+@keyframes spin{to{transform:rotate(360deg)}}/* ---------- sheet ---------- */
+.sheet{position:fixed;inset:0;z-index:60;display:flex;align-items:center;justify-content:center;padding:26px;
+  background:rgba(51,46,40,.34);backdrop-filter:blur(2px);-webkit-backdrop-filter:blur(2px);
+  opacity:0;pointer-events:none;transition:opacity .26s ease}
+.sheet.up{opacity:1;pointer-events:auto}
+.sheet-card{position:relative;width:100%;max-width:336px;background:var(--card);border:2px solid var(--ink);
+  border-radius:20px 15px 22px 16px / 16px 22px 15px 20px;padding:30px 22px 20px;text-align:center;
+  box-shadow:8px 10px 0 rgba(51,46,40,.13);transform:rotate(-.6deg) scale(.96);transition:transform .3s cubic-bezier(.2,.8,.3,1)}
+.sheet.up .sheet-card{transform:rotate(-.6deg) scale(1)}
+.sheet-card h3{margin:0;font-size:20px;font-weight:400;letter-spacing:.14em}
+.rc-time{margin:14px 0 6px;font-size:20px;letter-spacing:.04em;color:var(--red);line-height:1.6}
+.rc-place{font-size:13px;color:var(--ink2);letter-spacing:.06em;margin-bottom:20px}
+.rc-place i{font-style:normal;border-bottom:1.6px dashed var(--ink3);padding-bottom:1px}
+.stamp{position:absolute;top:-22px;right:-12px;width:62px;height:62px;border:2.4px solid var(--red);
+  border-radius:50%;color:var(--red);display:flex;align-items:center;justify-content:center;
+  font-size:25px;transform:rotate(11deg);background:rgba(255,252,242,.94)}
+.stamp::after{content:"";position:absolute;inset:5px;border:1px solid rgba(206,92,61,.5);border-radius:50%}
+.sheet-card .btn{width:100%;margin-top:2px}
+.sheet-card::before{content:"";position:absolute;inset:9px;border:1.4px dashed rgba(51,46,40,.22);
+  border-radius:14px 10px 16px 11px / 11px 16px 10px 14px;pointer-events:none}
+.sheet-card .stamp{z-index:2}
+.sheet-card .link{display:inline-block;margin-top:14px;font-size:12.5px;color:var(--ink3);
+  letter-spacing:.12em;cursor:pointer;background:none;border:none;font-family:inherit}
+.sheet-note{font-size:12px;color:var(--ink3);letter-spacing:.06em;margin:14px 0 0;line-height:1.75}
+.toast{position:fixed;left:50%;bottom:110px;transform:translate(-50%,14px);z-index:90;
+  background:var(--ink);color:var(--paper);font-size:13px;letter-spacing:.1em;padding:9px 20px;
+  border-radius:14px 18px 12px 16px;opacity:0;pointer-events:none;transition:all .25s ease}
+.toast.up{opacity:1;transform:translate(-50%,0)}
+@media (prefers-reduced-motion: reduce){*{animation:none!important;transition:none!important}}
+</style>
+</head><body>
+<div class="grain"></div>
+
+<svg width="0" height="0" style="position:absolute;overflow:hidden" aria-hidden="true"><defs>
+
+<symbol id="i-tabby" viewBox="0 0 220 200">
+  <g fill="none" stroke="#1F1B18" stroke-width="5" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M 190 176 C 212 170 216 148 204 138"/>
+    <path d="M 34 190 C 26 158 44 132 74 126 C 90 122 130 122 146 126 C 176 132 194 158 186 190 C 187 195 182 198 176 198 L 44 198 C 38 198 33 195 34 190 Z" fill="#FFFFFF"/>
+    <ellipse cx="110" cy="86" rx="56" ry="52" fill="#FFFFFF"/>
+    <path d="M 74 46 C 68 30 64 14 63 7 C 76 10 92 22 98 34" fill="#FFFFFF"/>
+    <path d="M 146 46 C 152 30 156 14 157 7 C 144 10 128 22 122 34" fill="#FFFFFF"/>
+    <path d="M 79 41 C 74 28 71 18 70 13 C 80 16 90 27 94 33 Z" fill="#F2B7AE" stroke="none"/>
+    <path d="M 141 41 C 146 28 149 18 150 13 C 140 16 130 27 126 33 Z" fill="#F2B7AE" stroke="none"/>
+    <path d="M 96 40 L 96 56"/>
+    <path d="M 110 36 L 110 54"/>
+    <path d="M 124 40 L 124 56"/>
+    <circle cx="88" cy="90" r="7.5" fill="#1F1B18" stroke="none"/>
+    <circle cx="132" cy="90" r="7.5" fill="#1F1B18" stroke="none"/>
+    <path d="M 102 102 L 118 102 L 110 108 Z" fill="#1F1B18" stroke="none"/>
+    <path d="M 110 108 C 110 116 104 118 99 114"/>
+    <path d="M 110 108 C 110 116 116 118 121 114"/>
+    <path d="M 56 88 L 34 82"/>
+    <path d="M 56 100 L 32 102"/>
+    <path d="M 164 88 L 186 82"/>
+    <path d="M 164 100 L 188 102"/>
+    <path d="M 74 198 C 80 189 94 189 100 198"/>
+    <path d="M 120 198 C 126 189 140 189 146 198"/>
+  </g>
+</symbol>
+
+<symbol id="i-silver" viewBox="0 0 200 230">
+  <g fill="none" stroke="#1F1B18" stroke-width="5" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M 140 214 C 166 208 172 188 162 176"/>
+    <path d="M 60 214 C 50 184 52 152 62 136 C 68 126 78 122 90 122 L 110 122 C 122 122 132 126 138 136 C 148 152 150 184 140 214 C 141 219 136 222 130 222 L 70 222 C 64 222 59 219 60 214 Z" fill="#FFFFFF"/>
+    <ellipse cx="100" cy="90" rx="52" ry="47" fill="#FFFFFF"/>
+    <path d="M 52 54 C 48 36 50 20 53 13 C 66 18 82 30 89 42" fill="#FFFFFF"/>
+    <path d="M 148 54 C 152 36 150 20 147 13 C 134 18 118 30 111 42" fill="#FFFFFF"/>
+    <path d="M 58 48 C 56 36 57 26 58 21 C 66 25 75 33 79 40 Z" fill="#F2B7AE" stroke="none"/>
+    <path d="M 142 48 C 144 36 143 26 142 21 C 134 25 125 33 121 40 Z" fill="#F2B7AE" stroke="none"/>
+    <path d="M 68 74 L 88 82"/>
+    <path d="M 132 74 L 112 82"/>
+    <circle cx="80" cy="94" r="7.5" fill="#1F1B18" stroke="none"/>
+    <circle cx="120" cy="94" r="7.5" fill="#1F1B18" stroke="none"/>
+    <path d="M 88 114 C 93 107 107 107 112 114"/>
+    <path d="M 70 124 L 70 140" stroke-width="4" opacity=".35"/>
+    <path d="M 130 124 L 130 140" stroke-width="4" opacity=".35"/>
+    <rect x="68" y="206" width="28" height="16" rx="8" fill="#FFFFFF"/>
+    <rect x="104" y="206" width="28" height="16" rx="8" fill="#FFFFFF"/>
+  </g>
+</symbol>
+
+<symbol id="i-sheep" viewBox="0 0 180 250">
+  <g fill="none" stroke="#1F1B18" stroke-width="5" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M 40 188 C 32 200 26 212 24 220 C 44 231 136 231 156 220 C 154 212 148 200 140 188 C 120 198 60 198 40 188 Z" fill="#FFFFFF"/>
+    <path d="M 24 220 C 32 230 42 230 50 220 C 58 230 68 230 76 220 C 84 230 94 230 102 220 C 110 230 120 230 128 220 C 136 230 148 230 156 220"/>
+    <path d="M 48 170 C 40 184 34 196 32 204 C 56 215 124 215 148 204 C 146 196 140 184 132 170 C 112 180 68 180 48 170 Z" fill="#FFFFFF"/>
+    <path d="M 32 204 C 39 213 47 213 53 204 C 59 213 67 213 73 204 C 79 213 87 213 93 204 C 99 213 107 213 113 204 C 119 213 127 213 133 204 C 139 213 143 213 148 204"/>
+    <path d="M 90 96 Q 107 88 116 103 Q 135 105 132 121 Q 145 132 132 143 Q 135 159 116 161 Q 107 176 90 168 Q 73 176 64 161 Q 45 159 48 143 Q 35 132 48 121 Q 45 105 64 103 Q 73 88 90 96 Z" fill="#FFFFFF"/>
+    <path d="M 90 34 Q 107 23 114 42 Q 134 42 128 62 Q 144 74 128 86 Q 134 106 114 106 Q 107 125 90 114 Q 73 125 66 106 Q 46 106 52 86 Q 36 74 52 62 Q 46 42 66 42 Q 73 23 90 34 Z" fill="#FFFFFF"/>
+    <path d="M 50 62 C 36 58 28 68 37 77 C 45 84 56 79 58 70" fill="#FFFFFF"/>
+    <path d="M 130 62 C 144 58 152 68 143 77 C 135 84 124 79 122 70" fill="#FFFFFF"/>
+    <path d="M 90 36 C 84 22 86 6 91 2 C 98 8 98 24 94 36" fill="#FFFFFF" stroke-width="4.5"/>
+    <path d="M 64 52 C 76 43 104 43 116 52" stroke-width="4"/>
+    <circle cx="74" cy="80" r="7.5" fill="#1F1B18" stroke="none"/>
+    <circle cx="106" cy="80" r="7.5" fill="#1F1B18" stroke="none"/>
+    <path d="M 84 96 C 87 101 93 101 96 96" stroke-width="4"/>
+    <ellipse cx="58" cy="92" rx="7" ry="4.5" fill="#F6C0B2" stroke="none" opacity=".85"/>
+    <ellipse cx="122" cy="92" rx="7" ry="4.5" fill="#F6C0B2" stroke="none" opacity=".85"/>
+  </g>
+</symbol>
+
+<symbol id="f-dapanji" viewBox="0 0 120 120">
+  <g fill="none" stroke="#1F1B18" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M 36 28 C 32 22 36 16 41 20" stroke-width="3.4" stroke="#9A8E7E"/>
+    <path d="M 60 24 C 56 18 60 12 65 16" stroke-width="3.4" stroke="#9A8E7E"/>
+    <path d="M 32 72 C 26 62 34 50 46 53 C 50 43 64 41 70 49 C 80 45 92 53 90 65 C 94 72 86 77 78 77 L 40 77 C 32 77 28 77 32 72 Z" fill="#E9B85C"/>
+    <path d="M 44 66 L 53 57 L 60 64 L 52 72 Z" fill="#FFFFFF"/>
+    <path d="M 72 56 L 79 51 L 85 58 L 78 64 Z" fill="#FFFFFF"/>
+    <circle cx="70" cy="70" r="4" fill="#CE5C3D" stroke="none"/>
+    <ellipse cx="60" cy="78" rx="46" ry="22" fill="#FFFFFF"/>
+  </g>
+</symbol>
+
+<symbol id="f-chuan" viewBox="0 0 120 120">
+  <g fill="none" stroke="#1F1B18" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round">
+    <g transform="rotate(-34 60 60)">
+      <path d="M 34 104 L 40 12"/><path d="M 60 104 L 66 12"/><path d="M 86 104 L 92 12"/>
+      <rect x="25" y="34" width="18" height="14" rx="7" fill="#D98457"/>
+      <rect x="25" y="54" width="18" height="14" rx="7" fill="#D98457"/>
+      <rect x="25" y="74" width="18" height="14" rx="7" fill="#D98457"/>
+      <rect x="52" y="30" width="18" height="14" rx="7" fill="#D98457"/>
+      <rect x="52" y="50" width="18" height="14" rx="7" fill="#D98457"/>
+      <rect x="52" y="70" width="18" height="14" rx="7" fill="#D98457"/>
+      <rect x="79" y="34" width="18" height="14" rx="7" fill="#D98457"/>
+      <rect x="79" y="54" width="18" height="14" rx="7" fill="#D98457"/>
+      <rect x="79" y="74" width="18" height="14" rx="7" fill="#D98457"/>
+    </g>
+  </g>
+</symbol>
+
+<symbol id="f-nang" viewBox="0 0 120 120">
+  <g fill="none" stroke="#1F1B18" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="60" cy="62" r="39" fill="#EBC98A"/>
+    <circle cx="60" cy="62" r="26" stroke-width="3.4" stroke-dasharray="4 7"/>
+    <circle cx="60" cy="52" r="2.8" fill="#1F1B18" stroke="none"/>
+    <circle cx="48" cy="64" r="2.8" fill="#1F1B18" stroke="none"/>
+    <circle cx="72" cy="64" r="2.8" fill="#1F1B18" stroke="none"/>
+    <circle cx="60" cy="75" r="2.8" fill="#1F1B18" stroke="none"/>
+  </g>
+</symbol>
+
+<symbol id="f-zhuafan" viewBox="0 0 120 120">
+  <g fill="none" stroke="#1F1B18" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M 26 66 C 30 46 44 34 60 34 C 76 34 90 46 94 66 Z" fill="#F3E2BE"/>
+    <path d="M 38 58 C 46 52 54 50 62 52" stroke="#E0A34E" stroke-width="4"/>
+    <path d="M 44 66 C 54 60 64 58 74 60" stroke="#E0A34E" stroke-width="4"/>
+    <path d="M 30 64 C 34 90 44 102 60 102 C 76 102 86 90 90 64 Z" fill="#FFFFFF"/>
+    <path d="M 24 64 C 34 70 86 70 96 64"/>
+  </g>
+</symbol>
+
+<symbol id="f-melon" viewBox="0 0 120 120">
+  <g fill="none" stroke="#1F1B18" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M 18 78 C 28 34 92 34 102 78 Z" fill="#CFDCA0"/>
+    <path d="M 27 78 C 35 45 85 45 93 78 Z" fill="#F4CD84"/>
+    <path d="M 42 57 L 37 78 M 60 51 L 60 78 M 78 57 L 83 78" stroke-width="2.6" opacity=".55"/>
+    <circle cx="50" cy="62" r="2.2" fill="#1F1B18" stroke="none"/>
+    <circle cx="70" cy="62" r="2.2" fill="#1F1B18" stroke="none"/>
+    <path d="M 18 78 C 40 85 80 85 102 78"/>
+  </g>
+</symbol>
+
+<symbol id="f-grape" viewBox="0 0 120 120">
+  <g fill="none" stroke="#1F1B18" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M 60 36 L 60 22"/>
+    <path d="M 60 24 C 70 13 82 15 87 23 C 79 33 66 33 60 24 Z" fill="#8FB58A"/>
+    <circle cx="48" cy="52" r="11" fill="#A98BC4"/>
+    <circle cx="72" cy="52" r="11" fill="#A98BC4"/>
+    <circle cx="60" cy="68" r="11" fill="#A98BC4"/>
+    <circle cx="43" cy="70" r="11" fill="#A98BC4"/>
+    <circle cx="77" cy="70" r="11" fill="#A98BC4"/>
+    <circle cx="60" cy="86" r="11" fill="#A98BC4"/>
+  </g>
+</symbol>
+
+<symbol id="f-naicha" viewBox="0 0 120 120">
+  <g fill="none" stroke="#1F1B18" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M 42 24 C 38 16 44 10 48 16" stroke-width="3.4" stroke="#9A8E7E"/>
+    <path d="M 64 22 C 60 14 66 8 70 14" stroke-width="3.4" stroke="#9A8E7E"/>
+    <path d="M 30 60 C 34 86 46 100 60 100 C 74 100 86 86 90 60 Z" fill="#FFFFFF"/>
+    <ellipse cx="60" cy="60" rx="30" ry="9" fill="#F0E2C4"/>
+  </g>
+</symbol>
+
+<symbol id="i-pin" viewBox="0 0 40 40">
+  <g fill="none" stroke="#CE5C3D" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M 20 36 C 20 36 8 24 8 16 C 8 9 13 4 20 4 C 27 4 32 9 32 16 C 32 24 20 36 20 36 Z" fill="#FFFFFF"/>
+    <circle cx="20" cy="16" r="4.4" fill="#CE5C3D" stroke="none"/>
+  </g>
+</symbol>
+
+<symbol id="i-spark" viewBox="0 0 40 40">
+  <g fill="none" stroke="#DFAC57" stroke-width="3.2" stroke-linecap="round">
+    <path d="M 20 6 L 20 16 M 20 24 L 20 34 M 6 20 L 16 20 M 24 20 L 34 20"/>
+  </g>
+</symbol>
+
+</defs></svg><main class="wrap">
+
+  <section class="cover">
+    <div class="tag">请 帖</div>
+    <div class="meow">喵 ～</div>
+    <h1 class="title">请你吃<span class="l2"><em>新疆菜</em></span></h1>
+    <p class="sub">赏个脸呗，都市丽人。</p>
+    <div class="hero">
+      <span class="hero-ground"></span>
+      <img class="hero-img h-l" src="assets/nian-gao.png" alt="年糕">
+      <img class="hero-img h-c" src="assets/xiao-yang.png" alt="小羊">
+      <img class="hero-img h-r" src="assets/shi-yi.png" alt="十一">
+      <svg class="hero-spark sp1" viewBox="0 0 40 40" aria-hidden="true"><use href="#i-spark" width="40" height="40"/></svg>
+      <svg class="hero-spark sp2" viewBox="0 0 40 40" aria-hidden="true"><use href="#i-spark" width="40" height="40"/></svg>
+    </div>
+    <div class="scrollhint">往 下 滑 ↓</div>
+  </section>
+
+  <section class="sec" id="letter">
+    <svg class="divider" viewBox="0 0 400 22" preserveAspectRatio="none" aria-hidden="true">
+      <path d="M 4 12 C 60 4 110 20 168 11 S 280 3 340 13 S 392 9 396 11" fill="none" stroke="#332E28" stroke-width="2" opacity=".3" stroke-linecap="round"/>
+    </svg>
+    <div class="note">
+      <div class="tape"></div>
+      <p>贫嘴老头诚邀日理万机的零零后老师<br>屈尊驾临，品鉴新疆美食，<br>体验西域风情。</p>
+      <p class="verdict">去吃<span class="hl">新疆菜</span>。</p>
+      <p><b>时间你来定</b>，你哪天有空我们就哪天去。地点我还在踩点，定了第一时间通知你。</p>
+      <p class="sign"><b>年糕 · 小羊 · 十一</b><br>（喵喵喵，翻译：快去挑个时间）</p>
+    </div>
+  </section>
+
+  <section class="sec" id="menu">
+    <p class="eyebrow">菜 单 先 偷 看</p>
+    <h2 class="h2">已经想好吃什么了<small>剩下就等你点头</small></h2>
+    <div class="menu">
+      <div class="dish"><svg viewBox="0 0 120 120"><use href="#f-dapanji" width="120" height="120"/></svg><span>大盘鸡</span></div>
+      <div class="dish"><svg viewBox="0 0 120 120"><use href="#f-chuan" width="120" height="120"/></svg><span>羊肉串</span></div>
+      <div class="dish"><svg viewBox="0 0 120 120"><use href="#f-nang" width="120" height="120"/></svg><span>馕</span></div>
+      <div class="dish"><svg viewBox="0 0 120 120"><use href="#f-zhuafan" width="120" height="120"/></svg><span>手抓饭</span></div>
+      <div class="dish"><svg viewBox="0 0 120 120"><use href="#f-melon" width="120" height="120"/></svg><span>哈密瓜</span></div>
+      <div class="dish"><svg viewBox="0 0 120 120"><use href="#f-grape" width="120" height="120"/></svg><span>葡萄</span></div>
+      <div class="dish"><svg viewBox="0 0 120 120"><use href="#f-naicha" width="120" height="120"/></svg><span>奶茶</span></div>
+    </div>
+  </section>
+
+  <section class="sec" id="pick">
+    <p class="eyebrow">第 二 件 事</p>
+    <h2 class="h2">时间你定<small>选好了我就去订位子</small></h2>
+    <div class="dates" id="dates"></div>
+    <div class="times" id="times"></div>
+    <div class="place">
+      <svg viewBox="0 0 40 40" aria-hidden="true"><use href="#i-pin" width="40" height="40"/></svg>
+      <div><b>地点 · 待定</b><i>我踩好点就把地址发给你</i></div>
+    </div>
+  </section>
+
+  <p class="foot">猫猫们 敬上 · 一张手绘的小请帖</p>
+</main>
+
+<div class="bar" id="bar">
+  <div class="bar-txt" id="barTxt">挑个你方便的日子吧</div>
+  <button class="btn" id="go" disabled>就这个时间</button>
+</div>
+
+<div class="sheet" id="sheet">
+  <div class="sheet-card">
+    <div class="stamp">定</div>
+    <h3>时间定好啦</h3>
+    <div class="rc-time" id="rcTime"></div>
+    <div class="rc-place">地点：<i>待定</i>，我定了马上告诉你</div>
+    <button class="btn" id="copyBtn">复制，发给她</button>
+    <button class="link" id="closeBtn" type="button">再看看</button>
+    <p class="sheet-note">复制后回到微信，粘贴发过去就行<br>也可以长按截图保存这张回执</p>
+  </div>
+</div>
+
+<div class="sheet" id="hostSheet">
+  <div class="sheet-card">
+    <div class="stamp">喵</div>
+    <h3>她选好时间了</h3>
+    <div class="rc-time" id="hostTime"></div>
+    <div class="rc-place">接下来：订位子，再把地址发给她</div>
+    <button class="btn" id="hostCopy">复制确认话术</button>
+    <button class="link" id="hostClose" type="button">先看看请帖</button>
+    <p class="sheet-note">话术里会带上时间，粘到微信发给她就行</p>
+  </div>
+</div>
+
+<button class="bgm" id="bgmBtn" type="button" aria-label="播放背景音乐">
+  <svg viewBox="0 0 24 24" aria-hidden="true">
+    <circle cx="12" cy="12" r="9.2" fill="none" stroke="#1F1B18" stroke-width="1.8"/>
+    <circle cx="12" cy="12" r="2.2" fill="#1F1B18"/>
+    <g class="disc">
+      <circle cx="12" cy="5" r="1.7" fill="#CE5C3D"/>
+      <path d="M12 5a7 7 0 0 1 6.2 3.6" fill="none" stroke="#CE5C3D" stroke-width="1.6" stroke-linecap="round"/>
+    </g>
+  </svg>
+</button>
+<audio id="bgm" src="assets/close.mp3" loop preload="auto" playsinline></audio>
+
+<div class="toast" id="toast">已复制</div>
+
+<script>
+(function(){
+  var WD = ['周日','周一','周二','周三','周四','周五','周六'];
+  var TIMES = ['11:30','12:00','12:30','17:30','18:00','18:30','19:00','19:30'];
+  var datesEl = document.getElementById('dates');
+  var timesEl = document.getElementById('times');
+  var bar = document.getElementById('bar');
+  var barTxt = document.getElementById('barTxt');
+  var goBtn = document.getElementById('go');
+  var sheet = document.getElementById('sheet');
+  var toast = document.getElementById('toast');
+  var selDate = null, selTime = null;
+
+  var base = new Date();
+  base.setHours(0,0,0,0);
+
+  function fmtDate(d){ return (d.getMonth()+1) + '月' + d.getDate() + '日 ' + WD[d.getDay()]; }
+  function isoDate(d){
+    var m = ('0'+(d.getMonth()+1)).slice(-2), dd = ('0'+d.getDate()).slice(-2);
+    return d.getFullYear() + '-' + m + '-' + dd;
+  }
+
+  for (var i = 0; i < 14; i++){
+    (function(i){
+      var d = new Date(base); d.setDate(d.getDate() + i);
+      var el = document.createElement('div');
+      el.className = 'date';
+      el.innerHTML = '<span class="dw">' + (i === 0 ? '今天' : i === 1 ? '明天' : WD[d.getDay()]) + '</span>' +
+                     '<span class="dd">' + (d.getMonth()+1) + '/' + d.getDate() + '</span>';
+      el.onclick = function(){
+        Array.prototype.forEach.call(datesEl.children, function(c){ c.classList.remove('on'); });
+        el.classList.add('on');
+        selDate = d;
+        sync();
+      };
+      datesEl.appendChild(el);
+    })(i);
+  }
+
+  TIMES.forEach(function(t){
+    var el = document.createElement('div');
+    el.className = 'time';
+    el.textContent = t;
+    el.onclick = function(){
+      Array.prototype.forEach.call(timesEl.children, function(c){ c.classList.remove('on'); });
+      el.classList.add('on');
+      selTime = t;
+      sync();
+    };
+    timesEl.appendChild(el);
+  });
+
+  function sync(){
+    if (selDate && selTime){
+      barTxt.innerHTML = '<b>' + fmtDate(selDate) + ' · ' + selTime + '</b>';
+      goBtn.textContent = '就这个时间';
+      goBtn.disabled = false;
+      bar.classList.add('up');
+    } else if (selDate){
+      barTxt.textContent = '再挑个吃饭的钟点～';
+      goBtn.textContent = '还差时段';
+      goBtn.disabled = true;
+      bar.classList.add('up');
+    } else {
+      bar.classList.remove('up');
+    }
+  }
+
+  function copyText(t){
+    if (navigator.clipboard && navigator.clipboard.writeText){
+      return navigator.clipboard.writeText(t).then(function(){ return true; }).catch(function(){ return legacy(t); });
+    }
+    return Promise.resolve(legacy(t));
+  }
+  function legacy(t){
+    try{
+      var ta = document.createElement('textarea');
+      ta.value = t; ta.setAttribute('readonly','');
+      ta.style.position = 'fixed'; ta.style.top = '-999px';
+      document.body.appendChild(ta);
+      ta.select(); ta.setSelectionRange(0, t.length);
+      var ok = document.execCommand('copy');
+      document.body.removeChild(ta);
+      return ok;
+    }catch(e){ return false; }
+  }
+  function showToast(msg){
+    toast.textContent = msg;
+    toast.classList.add('up');
+    clearTimeout(toast._t);
+    toast._t = setTimeout(function(){ toast.classList.remove('up'); }, 1800);
+  }
+
+  goBtn.onclick = function(){
+    if (!selDate || !selTime) return;
+    document.getElementById('rcTime').textContent = fmtDate(selDate) + ' · ' + selTime;
+    sheet.classList.add('up');
+    bar.classList.remove('up');
+  };
+  document.getElementById('closeBtn').onclick = function(){ sheet.classList.remove('up'); bar.classList.add('up'); };
+
+  document.getElementById('copyBtn').onclick = function(){
+    var link = location.origin + location.pathname + '#t=' + isoDate(selDate) + 'T' + selTime;
+    var msg = '我把时间定好啦：' + fmtDate(selDate) + ' ' + selTime + '，地点等你通知喵～\n' + link;
+    var btn = this;
+    copyText(msg).then(function(ok){
+      showToast(ok ? '已复制，粘贴发给她吧' : '复制失败，长按选中文字复制');
+      btn.textContent = ok ? '再复制一次' : '再试一次';
+    });
+  };
+
+  function readHash(){
+    var m = /#t=(\d{4})-(\d{2})-(\d{2})T(\d{2}:\d{2})/.exec(location.hash || '');
+    if (!m) return null;
+    return { d: new Date(+m[1], (+m[2]) - 1, +m[3]), t: m[4] };
+  }
+  var picked = readHash();
+  if (picked){
+    document.getElementById('hostTime').textContent = fmtDate(picked.d) + ' · ' + picked.t;
+    setTimeout(function(){ document.getElementById('hostSheet').classList.add('up'); }, 500);
+    document.getElementById('hostClose').onclick = function(){
+      document.getElementById('hostSheet').classList.remove('up');
+    };
+    document.getElementById('hostCopy').onclick = function(){
+      var msg = '好！那就 ' + fmtDate(picked.d) + ' ' + picked.t + '。地点我在踩点，定了马上发你，到时候见喵～';
+      copyText(msg).then(function(ok){
+        showToast(ok ? '已复制，粘贴发给她吧' : '复制失败，长按选中文字复制');
+      });
+    };
+  }
+
+  // ---- 背景音乐 ----
+  var bgm = document.getElementById('bgm');
+  var bgmBtn = document.getElementById('bgmBtn');
+  var userPaused = false;
+  function paint(on){
+    bgmBtn.classList.toggle('on', !!on);
+    bgmBtn.setAttribute('aria-label', on ? '暂停背景音乐' : '播放背景音乐');
+  }
+  bgm.addEventListener('play', function(){ paint(true); });
+  bgm.addEventListener('pause', function(){ paint(false); });
+  function kick(){
+    if (userPaused || !bgm.paused) return;
+    var pr = bgm.play();
+    if (pr && pr.catch) pr.catch(function(){});
+  }
+  bgmBtn.addEventListener('click', function(e){
+    e.stopPropagation();
+    if (bgm.paused){ userPaused = false; kick(); }
+    else { userPaused = true; bgm.pause(); }
+  });
+  document.addEventListener('touchstart', kick, { passive: true });
+  document.addEventListener('click', kick);
+  setTimeout(kick, 600);
+  var qs = new URLSearchParams(location.search);
+  var sy = qs.get('sy');
+  if (sy){ document.body.style.marginTop = '-' + (parseInt(sy, 10) || 0) + 'px'; }
+  if (qs.get('demo') === '1'){
+    datesEl.children[6].click();
+    timesEl.children[5].click();
+    if (qs.get('sheet') === '1') goBtn.click();
+  }})();
+</script>
+</body>
+</html>
