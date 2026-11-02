@@ -10,9 +10,9 @@
 <meta property="og:type" content="website">
 <meta property="og:title" content="请你吃新疆菜｜赏个脸呗，都市丽人。">
 <meta property="og:description" content="年糕 · 小羊 · 十一 联名邀请，时间你定">
-<meta property="og:url" content="https://desean1119.github.io/invite-7k3m9q/"><meta property="og:image" content="https://desean1119.github.io/invite-7k3m9q/share.png">
-<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lxgw-wenkai-webfont@1.7.0/lxgwwenkai-regular.css">
+<meta property="og:url" content="https://desean1119.github.io/invite-7k3m9q/"><meta property="og:image" content="https://desean1119.github.io/invite-7k3m9q/share2.jpg"><meta property="og:image:width" content="600"><meta property="og:image:height" content="600"><meta property="og:image:type" content="image/jpeg">
+<link rel="preload" href="assets/font/wenkai.woff2" as="font" type="font/woff2" crossorigin>
+<style>@font-face{font-family:'LXGW WenKai';font-style:normal;font-weight:400;font-display:swap;src:url("assets/font/wenkai.woff2") format("woff2")}</style>
 <style>
 :root{
   --ink:#1F1B18;
@@ -362,9 +362,9 @@ body{
     <p class="sub">赏个脸呗，都市丽人。</p>
     <div class="hero">
       <span class="hero-ground"></span>
-      <img class="hero-img h-l" src="assets/nian-gao.png" alt="年糕">
-      <img class="hero-img h-c" src="assets/xiao-yang.png" alt="小羊">
-      <img class="hero-img h-r" src="assets/shi-yi.png" alt="十一">
+      <picture><source type="image/webp" srcset="assets/nian-gao.webp"><img class="hero-img h-l" src="assets/nian-gao.png" width="520" height="506" decoding="async" alt="年糕"></picture>
+      <picture><source type="image/webp" srcset="assets/xiao-yang.webp"><img class="hero-img h-c" src="assets/xiao-yang.png" width="394" height="520" decoding="async" fetchpriority="high" alt="小羊"></picture>
+      <picture><source type="image/webp" srcset="assets/shi-yi.webp"><img class="hero-img h-r" src="assets/shi-yi.png" width="485" height="520" decoding="async" alt="十一"></picture>
       <svg class="hero-spark sp1" viewBox="0 0 40 40" aria-hidden="true"><use href="#i-spark" width="40" height="40"/></svg>
       <svg class="hero-spark sp2" viewBox="0 0 40 40" aria-hidden="true"><use href="#i-spark" width="40" height="40"/></svg>
     </div>
@@ -451,7 +451,7 @@ body{
     </g>
   </svg>
 </button>
-<audio id="bgm" src="assets/close.mp3" loop preload="auto" playsinline></audio>
+<audio id="bgm" src="assets/close.mp3" loop preload="none" playsinline></audio>
 
 <div class="toast" id="toast">已复制</div>
 
@@ -609,7 +609,15 @@ body{
   document.addEventListener('touchstart', kick, { passive: true });
   document.addEventListener('click', kick);
   setTimeout(kick, 600);
-  var qs = new URLSearchParams(location.search);
+  
+window.addEventListener("load", function(){
+  setTimeout(function(){
+    if (!bgm.paused || userPaused) return;
+    bgm.preload = "auto";
+    try { bgm.load(); } catch (e) {}
+  }, 1500);
+});
+var qs = new URLSearchParams(location.search);
   var sy = qs.get('sy');
   if (sy){ document.body.style.marginTop = '-' + (parseInt(sy, 10) || 0) + 'px'; }
   if (qs.get('demo') === '1'){
