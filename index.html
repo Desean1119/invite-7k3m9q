@@ -9,7 +9,7 @@
 <meta name="description" content="年糕、小羊、十一 联名邀请：赏个脸呗，都市丽人。点开选个时间。">
 <meta property="og:type" content="website">
 <meta property="og:title" content="请你吃新疆菜｜赏个脸呗，都市丽人。">
-<meta property="og:description" content="年糕 · 小羊 · 十一 联名邀请 · 天河城 7 楼，时间你定">
+<meta property="og:description" content="11 月 5 日 周四 19:00 · 天河城 7 楼，不见不散">
 <meta property="og:url" content="https://desean1119.github.io/invite-7k3m9q/"><meta property="og:image" content="https://desean1119.github.io/invite-7k3m9q/share2.jpg"><meta property="og:image:width" content="600"><meta property="og:image:height" content="600"><meta property="og:image:type" content="image/jpeg">
 <link rel="preload" href="assets/font/wenkai.woff2" as="font" type="font/woff2" crossorigin>
 <style>@font-face{font-family:'LXGW WenKai';font-style:normal;font-weight:400;font-display:swap;src:url("assets/font/wenkai.woff2") format("woff2")}</style>
@@ -188,7 +188,23 @@ body{
 a.place{text-decoration:none;color:inherit;transition:transform .15s ease}
 a.place:active{transform:scale(.985)}
 .place .place-go{margin-left:auto;font-size:12px;letter-spacing:.1em;color:var(--red);border:1.6px solid var(--red);border-radius:12px;padding:5px 10px;white-space:nowrap}
-</style>
+<style>
+.when-card{display:flex;align-items:center;gap:16px;margin-top:16px;padding:18px 20px;
+  background:var(--card);border:2px solid var(--ink);
+  border-radius:22px 16px 24px 18px / 18px 24px 16px 22px;
+  box-shadow:5px 6px 0 rgba(51,46,40,.07);transform:rotate(-.35deg)}
+.when-date{display:flex;align-items:baseline;gap:7px}
+.when-date b{font-size:42px;font-weight:400;line-height:1;color:var(--red);letter-spacing:.01em}
+.when-date .wd{font-size:13px;color:var(--ink2);letter-spacing:.14em}
+.when-meta{margin-left:auto;text-align:right}
+.when-meta b{display:block;font-size:21px;font-weight:400;letter-spacing:.05em}
+.when-meta i{font-style:normal;font-size:12px;color:var(--ink3);letter-spacing:.08em}
+.acts{margin-top:14px;text-align:center}
+.mini{font-family:inherit;font-size:12.5px;letter-spacing:.14em;color:var(--ink2);
+  background:transparent;border:1.6px dashed rgba(51,46,40,.42);border-radius:14px;
+  padding:8px 16px;cursor:pointer}
+.mini:active{transform:scale(.97)}
+</style></style>
 </head><body>
 <div class="grain"></div>
 
@@ -383,7 +399,7 @@ a.place:active{transform:scale(.985)}
       <div class="tape"></div>
       <p>贫嘴老头诚邀日理万机的零零后老师<br>屈尊驾临，品鉴新疆美食，<br>体验西域风情。</p>
       <p class="verdict">去吃<span class="hl">新疆菜</span>。</p>
-      <p><b>时间你来定</b>，你哪天有空我们就哪天去。<br>地方我挑好了：<b>赫斯提娅·新疆味道</b>，和平路 263 号天河城 7 楼，地铁 3 号线和平路站出来就到。</p>
+      <p>日子就定在 <b>11 月 5 号，周四，晚上七点</b>——你说行的那天，我记下了。<br>地方是 <b>赫斯提娅·新疆味道</b>，和平路 263 号天河城 7 楼，地铁 3 号线和平路站出来就到。</p>
       <p class="sign"><b>年糕 · 小羊 · 十一</b><br>（喵喵喵，翻译：快去挑个时间）</p>
     </div>
   </section>
@@ -402,49 +418,23 @@ a.place:active{transform:scale(.985)}
     </div>
   </section>
 
-  <section class="sec" id="pick">
+  <section class="sec" id="when">
     <p class="eyebrow">第 二 件 事</p>
-    <h2 class="h2">时间你定<small>选好了我就去订位子</small></h2>
-    <div class="dates" id="dates"></div>
-    <div class="times" id="times"></div>
+    <h2 class="h2">就这么说定了<small>不改了，再改我得涨价</small></h2>
+    <div class="when-card">
+      <div class="when-date"><b>11.5</b><span class="wd">周四</span></div>
+      <div class="when-meta"><b>19:00</b><i>晚七点，别迟到</i></div>
+    </div>
     <a class="place" href="https://uri.amap.com/search?keyword=%E8%B5%AB%E6%96%AF%E6%8F%90%E5%A8%85%C2%B7%E6%96%B0%E7%96%86%E5%91%B3%E9%81%93%20%E5%A4%A9%E6%B2%B3%E5%9F%8E&city=022&callnative=1" target="_blank" rel="noopener">
       <svg viewBox="0 0 40 40" aria-hidden="true"><use href="#i-pin" width="40" height="40"/></svg>
       <div><b>赫斯提娅·新疆味道（天河城店）</b><i>和平区和平路 263 号 · 天河城 7 楼 711B</i></div>
       <span class="place-go">导航</span>
     </a>
+    <div class="acts"><button class="mini" id="copyTime" type="button">复制时间地点</button></div>
   </section>
 
   <p class="foot">猫猫们 敬上 · 一张手绘的小请帖</p>
 </main>
-
-<div class="bar" id="bar">
-  <div class="bar-txt" id="barTxt">挑个你方便的日子吧</div>
-  <button class="btn" id="go" disabled>就这个时间</button>
-</div>
-
-<div class="sheet" id="sheet">
-  <div class="sheet-card">
-    <div class="stamp">定</div>
-    <h3>时间定好啦</h3>
-    <div class="rc-time" id="rcTime"></div>
-    <div class="rc-place">地点：<i>赫斯提娅·新疆味道</i><br>和平路 263 号 · 天河城 7 楼</div>
-    <button class="btn" id="copyBtn">复制，发给她</button>
-    <button class="link" id="closeBtn" type="button">再看看</button>
-    <p class="sheet-note">复制后回到微信，粘贴发过去就行<br>也可以长按截图保存这张回执</p>
-  </div>
-</div>
-
-<div class="sheet" id="hostSheet">
-  <div class="sheet-card">
-    <div class="stamp">喵</div>
-    <h3>她选好时间了</h3>
-    <div class="rc-time" id="hostTime"></div>
-    <div class="rc-place">接下来：订个位子就行，地址她那边已经能看到</div>
-    <button class="btn" id="hostCopy">复制确认话术</button>
-    <button class="link" id="hostClose" type="button">先看看请帖</button>
-    <p class="sheet-note">话术里会带上时间，粘到微信发给她就行</p>
-  </div>
-</div>
 
 <button class="bgm" id="bgmBtn" type="button" aria-label="播放背景音乐">
   <svg viewBox="0 0 24 24" aria-hidden="true">
@@ -462,72 +452,13 @@ a.place:active{transform:scale(.985)}
 
 <script>
 (function(){
-  var WD = ['周日','周一','周二','周三','周四','周五','周六'];
-  var TIMES = ['11:30','12:00','12:30','17:30','18:00','18:30','19:00','19:30'];
-  var datesEl = document.getElementById('dates');
-  var timesEl = document.getElementById('times');
-  var bar = document.getElementById('bar');
-  var barTxt = document.getElementById('barTxt');
-  var goBtn = document.getElementById('go');
-  var sheet = document.getElementById('sheet');
   var toast = document.getElementById('toast');
-  var selDate = null, selTime = null;
-
-  var base = new Date();
-  base.setHours(0,0,0,0);
-
-  function fmtDate(d){ return (d.getMonth()+1) + '月' + d.getDate() + '日 ' + WD[d.getDay()]; }
-  function isoDate(d){
-    var m = ('0'+(d.getMonth()+1)).slice(-2), dd = ('0'+d.getDate()).slice(-2);
-    return d.getFullYear() + '-' + m + '-' + dd;
+  function showToast(msg){
+    toast.textContent = msg;
+    toast.classList.add('up');
+    clearTimeout(toast._t);
+    toast._t = setTimeout(function(){ toast.classList.remove('up'); }, 1800);
   }
-
-  for (var i = 0; i < 14; i++){
-    (function(i){
-      var d = new Date(base); d.setDate(d.getDate() + i);
-      var el = document.createElement('div');
-      el.className = 'date';
-      el.innerHTML = '<span class="dw">' + (i === 0 ? '今天' : i === 1 ? '明天' : WD[d.getDay()]) + '</span>' +
-                     '<span class="dd">' + (d.getMonth()+1) + '/' + d.getDate() + '</span>';
-      el.onclick = function(){
-        Array.prototype.forEach.call(datesEl.children, function(c){ c.classList.remove('on'); });
-        el.classList.add('on');
-        selDate = d;
-        sync();
-      };
-      datesEl.appendChild(el);
-    })(i);
-  }
-
-  TIMES.forEach(function(t){
-    var el = document.createElement('div');
-    el.className = 'time';
-    el.textContent = t;
-    el.onclick = function(){
-      Array.prototype.forEach.call(timesEl.children, function(c){ c.classList.remove('on'); });
-      el.classList.add('on');
-      selTime = t;
-      sync();
-    };
-    timesEl.appendChild(el);
-  });
-
-  function sync(){
-    if (selDate && selTime){
-      barTxt.innerHTML = '<b>' + fmtDate(selDate) + ' · ' + selTime + '</b>';
-      goBtn.textContent = '就这个时间';
-      goBtn.disabled = false;
-      bar.classList.add('up');
-    } else if (selDate){
-      barTxt.textContent = '再挑个吃饭的钟点～';
-      goBtn.textContent = '还差时段';
-      goBtn.disabled = true;
-      bar.classList.add('up');
-    } else {
-      bar.classList.remove('up');
-    }
-  }
-
   function copyText(t){
     if (navigator.clipboard && navigator.clipboard.writeText){
       return navigator.clipboard.writeText(t).then(function(){ return true; }).catch(function(){ return legacy(t); });
@@ -546,52 +477,16 @@ a.place:active{transform:scale(.985)}
       return ok;
     }catch(e){ return false; }
   }
-  function showToast(msg){
-    toast.textContent = msg;
-    toast.classList.add('up');
-    clearTimeout(toast._t);
-    toast._t = setTimeout(function(){ toast.classList.remove('up'); }, 1800);
-  }
-
-  goBtn.onclick = function(){
-    if (!selDate || !selTime) return;
-    document.getElementById('rcTime').textContent = fmtDate(selDate) + ' · ' + selTime;
-    sheet.classList.add('up');
-    bar.classList.remove('up');
-  };
-  document.getElementById('closeBtn').onclick = function(){ sheet.classList.remove('up'); bar.classList.add('up'); };
-
-  document.getElementById('copyBtn').onclick = function(){
-    var link = location.origin + location.pathname + '#t=' + isoDate(selDate) + 'T' + selTime;
-    var msg = '我把时间定好了：' + fmtDate(selDate) + ' ' + selTime + '，地方是赫斯提娅·新疆味道（天河城 7 楼），不见不散～\n' + link;
-    var btn = this;
-    copyText(msg).then(function(ok){
-      showToast(ok ? '已复制，粘贴发给她吧' : '复制失败，长按选中文字复制');
-      btn.textContent = ok ? '再复制一次' : '再试一次';
-    });
-  };
-
-  function readHash(){
-    var m = /#t=(\d{4})-(\d{2})-(\d{2})T(\d{2}:\d{2})/.exec(location.hash || '');
-    if (!m) return null;
-    return { d: new Date(+m[1], (+m[2]) - 1, +m[3]), t: m[4] };
-  }
-  var picked = readHash();
-  if (picked){
-    document.getElementById('hostTime').textContent = fmtDate(picked.d) + ' · ' + picked.t;
-    setTimeout(function(){ document.getElementById('hostSheet').classList.add('up'); }, 500);
-    document.getElementById('hostClose').onclick = function(){
-      document.getElementById('hostSheet').classList.remove('up');
-    };
-    document.getElementById('hostCopy').onclick = function(){
-      var msg = '好！那就 ' + fmtDate(picked.d) + ' ' + picked.t + '。地方是赫斯提娅·新疆味道，和平路 263 号天河城 7 楼，到时候见～';
+  var copyBtn = document.getElementById('copyTime');
+  if (copyBtn){
+    copyBtn.onclick = function(){
+      var msg = '11 月 5 日 周四 19:00，赫斯提娅·新疆味道（天河城 7 楼），不见不散～';
       copyText(msg).then(function(ok){
-        showToast(ok ? '已复制，粘贴发给她吧' : '复制失败，长按选中文字复制');
+        showToast(ok ? '已复制，粘给她就行' : '复制失败，长按选中文字复制');
       });
     };
   }
 
-  // ---- 背景音乐 ----
   var bgm = document.getElementById('bgm');
   var bgmBtn = document.getElementById('bgmBtn');
   var userPaused = false;
@@ -614,22 +509,17 @@ a.place:active{transform:scale(.985)}
   document.addEventListener('touchstart', kick, { passive: true });
   document.addEventListener('click', kick);
   setTimeout(kick, 600);
-  
-window.addEventListener("load", function(){
-  setTimeout(function(){
-    if (!bgm.paused || userPaused) return;
-    bgm.preload = "auto";
-    try { bgm.load(); } catch (e) {}
-  }, 1500);
-});
-var qs = new URLSearchParams(location.search);
+  window.addEventListener('load', function(){
+    setTimeout(function(){
+      if (!bgm.paused || userPaused) return;
+      bgm.preload = 'auto';
+      try { bgm.load(); } catch (e) {}
+    }, 1500);
+  });
+  var qs = new URLSearchParams(location.search);
   var sy = qs.get('sy');
   if (sy){ document.body.style.marginTop = '-' + (parseInt(sy, 10) || 0) + 'px'; }
-  if (qs.get('demo') === '1'){
-    datesEl.children[6].click();
-    timesEl.children[5].click();
-    if (qs.get('sheet') === '1') goBtn.click();
-  }})();
+})();
 </script>
 </body>
 </html>
